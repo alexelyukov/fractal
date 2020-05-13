@@ -29,6 +29,8 @@ library
   exposed-modules:
       Types
       Drawer2d
+      NapkinSierpinski
+      CarpetSierpinski
   other-modules:
       Paths_fractal
   hs-source-dirs:
