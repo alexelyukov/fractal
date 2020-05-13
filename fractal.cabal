@@ -31,6 +31,7 @@ library
       Drawer2d
       NapkinSierpinski
       CarpetSierpinski
+      KochSnowflake
   other-modules:
       Paths_fractal
   hs-source-dirs:

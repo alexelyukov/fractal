@@ -2,6 +2,7 @@ module Drawer2d (
   drawBackground,
   drawRectangles,
   drawTriangles,
+  drawLines,
 ) where
 
 import Types
@@ -36,6 +37,9 @@ drawRectangle (Rectangle p1 p2) = do
   let (V2 x0' y0') = preparePoint2d p1
       (V2 x1' y1') = preparePoint2d p2
   withTexture (uniformTexture (PixelRGBA8 0x00 0x00 0x00 255)) . fill $ rectangle (V2 x0' y0') (x1' - x0') (y1' - y0')
+
+drawLines :: [Line2d] -> Drawing PixelRGBA8 ()
+drawLines = mconcat . map drawLine
 
 drawLine :: Line2d -> Drawing PixelRGBA8 ()
 drawLine (Line2d p0 p1) = stroke 1 JoinRound (CapRound, CapRound) $ line (preparePoint2d p0) (preparePoint2d p1)
