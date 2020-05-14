@@ -31,4 +31,4 @@ drawKochSnowflake = writePng "kochSnowflake.png" $ drawBackground $
 
 drawPythagorasTree :: IO ()
 drawPythagorasTree = writePng "pythagorasTree.png" $ drawBackground $
-  pythagorasTree (Line2d (Point2d 1000 1900) (Point2d 1000 1700)) 2 (pi / 4) (pi / 4) (0.8)
+  pythagorasTree (Line2d (Point2d 1000 1700) (Point2d 1000 1400)) 12 (0.5 * pi / 4) (pi / 4) 0.83
