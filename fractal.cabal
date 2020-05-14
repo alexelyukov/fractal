@@ -32,6 +32,7 @@ library
       NapkinSierpinski
       CarpetSierpinski
       KochSnowflake
+      PythagorasTree
   other-modules:
       Paths_fractal
   hs-source-dirs:
